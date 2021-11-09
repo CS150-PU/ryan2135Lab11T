@@ -14,10 +14,12 @@
 
 using namespace std;
 
+const int MAX = 10;
+
 void printTitle (const char title[]);
 void printArray (const int arry[], int count);
 int  sumOfArray (const int arry[], int count);
-void insertLastArray (int arryDestination[], int &count,
+void insertLastArray (int arry[], int &count,
 	int maxCount, int insertValue);
 void insertFirstArray (int arryDestination[], int &count,
 	int maxCount, int insertValue);
@@ -35,7 +37,6 @@ Parameters:   None
 Returned:     Exit Status
 ***********************************************************************/
 int main () {
-	const int MAX = 10;
 
 	int arrayA[MAX] = { 1, 2, 3, 4, 5 }, countA = 5;
 	int arrayB[MAX] = { 10, 9, 8, 7, 6 }, countB = 5;
@@ -114,8 +115,8 @@ Function:     printArray
 
 Description:  prints each element of an array justified in a field of 3
 
-Parameters:   arry - the array to be printed
-							size - the size of the array
+Parameters:   arry  - the array to be printed
+							count - the size of the array
 
 Returned:     none
 ***********************************************************************/
@@ -129,8 +130,8 @@ Function:     sumOfArray
 
 Description:  returns the sum of all elements in an array
 
-Parameters:   arry - the array to be added together
-							size - the size of the array
+Parameters:   arry  - the array to be added together
+							count - the size of the array
 
 Returned:     sum of all elements in array
 ***********************************************************************/
@@ -186,7 +187,7 @@ Parameters:   arry  - the array to be tested
 Returned:     true if the array is sorted increasing; else, false
 ***********************************************************************/
 bool isSorted (const int arry[], int count) {
-	return true;;
+	return true;
 }
 
 /***********************************************************************
