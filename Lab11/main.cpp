@@ -116,7 +116,7 @@ Function:     printArray
 Description:  prints each element of an array justified in a field of 3
 
 Parameters:   arry  - the array to be printed
-							count - the size of the array
+							count - the number of elements in the array
 
 Returned:     none
 ***********************************************************************/
@@ -131,7 +131,7 @@ Function:     sumOfArray
 Description:  returns the sum of all elements in an array
 
 Parameters:   arry  - the array to be added together
-							count - the size of the array
+							count - the number of elements in the array
 
 Returned:     sum of all elements in array
 ***********************************************************************/
@@ -146,8 +146,8 @@ Description:  adds a value at the end of the array if there is space
 							available
 
 Parameters:   arry			  - the array to be modified
-							count				- the size of the array
-							maxCount		- the maximum value the array can be
+							count				- the number of elements in the array
+							maxCount		- the actual size of the array
 							insertValue	- the value to input into the array
 
 Returned:     none
@@ -165,8 +165,8 @@ Description:  adds a value at the beginning of the array if there is
 							by 1 to make room for the new value
 
 Parameters:   arry				- the array to be modified
-							count				- the size of the array
-							maxCount		- the maximum value the array can be
+							count				- the number of elements in the array
+							maxCount		- the actual size of the array
 							insertValue	- the value to input into the array
 
 Returned:     none
@@ -182,7 +182,7 @@ Function:     isSorted
 Description:  Checks if the array is sorted
 
 Parameters:   arry  - the array to be tested
-							count - the size of the array
+							count - the number of elements in the array
 
 Returned:     true if the array is sorted increasing; else, false
 ***********************************************************************/
@@ -196,7 +196,7 @@ Function:     reverseArry
 Description:  returns the array with elements reversed
 
 Parameters:   arry   - the array to be reversed
-							count	 - the size of the array
+							count	 - the number of elements in the array
 
 Returned:     none
 ***********************************************************************/
